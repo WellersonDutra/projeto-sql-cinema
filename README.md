@@ -9,7 +9,14 @@ A escolha do SQLite se deu pela agilidade e eficiência para a criação de um b
 
 Modelagem Relacional (Schema)
 
+1. Tabela de Diretores (Entidade de Referência)
+
+CREATE TABLE Diretores (
+    id_diretor   INTEGER PRIMARY KEY NOT NULL,
+    nome_diretor TEXT NOT NULL
+
 O banco de dados foi estruturado seguindo as regras de Normalização, separando as entidades para garantir a integridade referencial através de Chaves Estrangeiras (FK).
+
 
 Estrutura da Tabela Principal (`Filmes`):
 
